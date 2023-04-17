@@ -1,0 +1,20 @@
+.header {
+	background-color: #4aa3a3;
+}
+.inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px;
+	border: 1px solid #333;
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+.name {
+	padding-left: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	transform: translateY(1px);
+}
