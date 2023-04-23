@@ -1,55 +1,56 @@
 ul,
 ol {
-	list-style-position: inside;
+  list-style-position: inside;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .preview {
-	display: flex;
-	flex-direction: column;
-	width: 800px;
-	background-color: #c0d8d8;
-	box-shadow: 0 0 5px #333;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  background-color: #c0d8d8;
+  box-shadow: 0 0 5px #333;
 }
 
 .contents {
-	min-height: 170px;
-	padding-block: 28px;
-	padding-inline: 20px;
-	border: 1px solid #333;
+  min-height: 170px;
+  padding-block: 28px;
+  padding-inline: 20px;
+  border: 1px solid #333;
 }
 .contents div {
-	text-align: left;
+  text-align: left;
 }
 .contents h1 {
-	font-size: 28px;
-	border-bottom: 2px solid #000;
+  font-size: 28px;
+  border-bottom: 2px solid #000;
 }
 .contents h1 + * {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 .contents h2 {
-	font-size: 21px;
-	border-bottom: 1px solid #000;
+  font-size: 21px;
+  border-bottom: 1px solid #000;
 }
 .contents h2 + * {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 .contents h3 {
-	font-size: 16px;
+  font-size: 16px;
 }
 .contents ul > li {
-	padding-left: 2em;
+  padding-left: 2em;
 }
 .contents ol > li {
-	padding-left: 2em;
+  padding-left: 2em;
 }
 .contents p:has(img) {
-	margin-top: 24px;
-	margin-inline: 40px;
+  margin-top: 24px;
+  margin-inline: 40px;
 }
