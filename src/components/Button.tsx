@@ -4,6 +4,7 @@ import {
   faUpDownLeftRight,
   faDownLeftAndUpRightToCenter,
 } from "@fortawesome/free-solid-svg-icons";
+import "../css/button.css";
 
 export function Button(): JSX.Element {
   const [isExpanded, setIsExpanded] = useState<Boolean>(false);
@@ -26,19 +27,8 @@ export function Button(): JSX.Element {
     }
   }
 
-  const buttonStyle = {
-    padding: 0,
-    backgroundColor: "transparent",
-    border: "none",
-    cursor: "pointer",
-  };
-
   return (
-    <button
-      type="button"
-      onClick={(e) => toggleExpanded(e)}
-      style={buttonStyle}
-    >
+    <button type="button" onClick={(e) => toggleExpanded(e)}>
       <FontAwesomeIcon
         icon={!isExpanded ? faUpDownLeftRight : faDownLeftAndUpRightToCenter}
         size="2xl"
