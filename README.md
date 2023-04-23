@@ -1,5 +1,5 @@
 # markdown-previewer
-Created with CodeSandbox
+マークダウン記法をHTMLコードに変換する機能
 
 ## 開発言語
 * React
