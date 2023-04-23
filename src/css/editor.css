@@ -5,6 +5,12 @@
   width: 100%;
   box-shadow: 0 0 5px #333;
 }
+.container.is-active .textarea {
+  min-height: 100vh;
+}
+.container.is-hidden {
+  display: none;
+}
 
 .textarea {
   min-height: 200px;

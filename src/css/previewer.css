@@ -17,7 +17,12 @@ img {
   background-color: #c0d8d8;
   box-shadow: 0 0 5px #333;
 }
-
+.preview.is-active .contents {
+  min-height: 100vh;
+}
+.preview.is-hidden {
+  display: none;
+}
 .contents {
   min-height: 170px;
   padding-block: 28px;
