@@ -10,34 +10,39 @@ export function Button(): JSX.Element {
 
   function toggleExpanded(e: React.MouseEvent<HTMLButtonElement>) {
     setIsExpanded(!isExpanded);
+    manipulateElements();
 
-    const parent = e.currentTarget.parentNode;
-    const header = parent?.parentNode;
-    const contents = header?.parentElement;
-    const brotherElement =
-      contents?.id === "editor"
-        ? contents?.nextElementSibling
-        : contents?.previousElementSibling;
+    function manipulateElements() {
+      const parent = e.currentTarget.parentNode;
+      const header = parent?.parentNode;
+      const contents = header?.parentElement;
+      const brotherElement =
+        contents?.id === "editor"
+          ? contents?.nextElementSibling
+          : contents?.previousElementSibling;
 
-    contents?.classList.toggle("is-active");
-    brotherElement?.classList.toggle("is-hidden");
+      contents?.classList.toggle("is-active");
+      brotherElement?.classList.toggle("is-hidden");
+    }
   }
+
+  const buttonStyle = {
+    padding: 0,
+    backgroundColor: "transparent",
+    border: "none",
+    cursor: "pointer",
+  };
 
   return (
     <button
       type="button"
       onClick={(e) => toggleExpanded(e)}
-      style={{
-        padding: 0,
-        backgroundColor: "transparent",
-        border: "none",
-        cursor: "pointer",
-      }}
+      style={buttonStyle}
     >
       <FontAwesomeIcon
         icon={!isExpanded ? faUpDownLeftRight : faDownLeftAndUpRightToCenter}
         size="2xl"
-        transform={!isExpanded ? { rotate: 45 } : { rotate: 0 }}
+        transform={{ rotate: isExpanded ? 0 : 45 }}
       />
     </button>
   );
