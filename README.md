@@ -8,5 +8,8 @@
 ## フレームワーク
 * Redux
 
+## ホスティングサービス
+* Vercel
+
 ## 学習参考サイト
 [freeCodeCamp](https://www.freecodecamp.org/)
